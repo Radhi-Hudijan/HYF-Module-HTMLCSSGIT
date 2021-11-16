@@ -1,0 +1,291 @@
+/* To import fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/* To Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url("body.jpg"); */
+  background: linear-gradient(rgba(10, 10, 10, 0.2), rgba(7, 7, 7, 0.2)),
+    url("body.jpg") no-repeat center center/cover;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: center; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.resume {
+  max-width: 800px;
+  height: auto;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+  border-radius: 5px;
+}
+
+.leftSide {
+  background-color: #e7e5e8;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+}
+
+.leftSide .PersonalDetails {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 30px 0;
+  border-bottom: 2px solid rgb(146, 142, 142);
+}
+.leftSide .PersonalDetails img {
+  width: 80%;
+  border-radius: 50%;
+  border: 2px solid rgb(88, 84, 84);
+}
+.leftSide .PersonalDetails .name {
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px 0;
+  color: rgb(90, 88, 88);
+  text-transform: uppercase;
+}
+
+.leftSide .PersonalDetails .title {
+  font-weight: 500;
+  color: rgb(90, 88, 88);
+  text-transform: uppercase;
+}
+
+.leftSide .contcatDetails {
+  width: 100%;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.leftSide .contcatDetails ul {
+  margin: 50px auto;
+}
+.leftSide .contcatDetails ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem 0.5rem 1rem;
+}
+.leftSide .contcatDetails ul li .icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  background-color: rgb(170, 165, 165);
+  border-radius: 50%;
+  position: relative;
+  margin-right: 5px;
+}
+.leftSide .contcatDetails ul li .icon i,
+.leftSide .socialLinks .social .icon i {
+  color: rgb(61, 60, 60);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.leftSide .contcatDetails ul li .Con-text {
+  color: rgb(90, 88, 88);
+}
+
+.leftSide .socialLinks {
+  width: 80%;
+  text-align: center;
+  border-top: 2px solid rgb(146, 142, 142);
+  margin: 50px auto;
+  padding-top: 50px;
+}
+
+.leftSide .socialLinks .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  color: rgb(90, 88, 88);
+  cursor: pointer;
+}
+
+.leftSide .socialLinks .social .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.rightSide {
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  padding: 25px;
+}
+
+.rightSide .title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  padding-bottom: 15px;
+  color: rgb(90, 88, 88);
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(90, 88, 88);
+}
+
+.rightSide .profile-Summary p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.rightSide .major {
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(90, 88, 88);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.rightSide .uni-name {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(68, 67, 67);
+  margin-bottom: 10px;
+}
+
+.rightSide .discription {
+  text-align: justify;
+  line-height: 1.5rem;
+  color: rgb(90, 88, 88);
+  margin-bottom: 25px;
+}
+
+.rightSide .education ul,
+.rightSide .experience ul {
+  padding: 0 0 0 20px;
+  overflow: hidden;
+}
+
+.rightSide .education ul li,
+.rightSide .experience ul li {
+  list-style: none;
+  position: relative;
+}
+.rightSide .education ul li::before,
+.rightSide .experience ul li::before {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid rgb(90, 88, 88);
+  border-radius: 50%;
+}
+
+.rightSide .education ul li::after,
+.rightSide .experience ul li::after {
+  content: " ";
+  width: 2px;
+  height: 140px;
+  position: absolute;
+  top: 15px;
+  left: -16px;
+  background-color: rgb(90, 88, 88);
+}
+
+.rightSide .Skills .skill-list .skill-item svg {
+  max-width: 120px;
+  max-height: 120px;
+  overflow: initial;
+  transform: rotate(-90deg);
+}
+
+.rightSide .Skills .skill-list .skill-item svg circle {
+  fill: none;
+  stroke: rgb(218, 214, 214);
+  stroke-width: 13px;
+  stroke-linecap: round;
+}
+
+.rightSide .Skills .skill-list .skill-item svg circle:nth-child(2) {
+  stroke: rgb(90, 88, 88);
+  position: relative;
+  z-index: 1;
+}
+
+.rightSide
+  .Skills
+  .skill-list
+  .skill-container:nth-child(1)
+  svg
+  circle:nth-child(2) {
+  stroke-dasharray: calc(2 * 3.14 * 50);
+  stroke-dashoffset: calc((2 * 3.14 * 50) - ((2 * 3.14 * 50) * 0.9));
+}
+
+.rightSide
+  .Skills
+  .skill-list
+  .skill-container:nth-child(2)
+  svg
+  circle:nth-child(2) {
+  stroke-dasharray: calc(2 * 3.14 * 50);
+  stroke-dashoffset: calc((2 * 3.14 * 50) - ((2 * 3.14 * 50) * 0.7));
+}
+
+.rightSide
+  .Skills
+  .skill-list
+  .skill-container:nth-child(3)
+  svg
+  circle:nth-child(2) {
+  stroke-dasharray: calc(2 * 3.14 * 50);
+  stroke-dashoffset: calc((2 * 3.14 * 50) - ((2 * 3.14 * 50) * 0.5));
+}
+
+.rightSide .Skills .skill-list {
+  text-align: center;
+  color: rgb(90, 88, 88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSide .Skills .skill-list .skill-item {
+  position: relative;
+}
+
+.rightSide .Skills .skill-list .skill-container {
+  margin: 0 20px;
+}
+
+.rightSide .Skills .skill-list .skill-item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/* To Make the Resume Responsive */
+@media (max-width: 700px) {
+  .resume {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightSide .Skills .skill-list .skill-container {
+    margin: 0 10px;
+  }
+}
