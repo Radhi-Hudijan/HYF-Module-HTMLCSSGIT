@@ -1,0 +1,19 @@
+Q1: 
+To hide  file , we have to add a 'Dot' at the biggening of the file name . For example , we want to hide file name 'html.tex', we use the following command :
+$ mv html.tex .html.tex 
+
+To show it , we use :
+$ ls -a or $ls -al
+--
+Q2:
+To Create Multiple listed Directory using the follwing commad :
+
+$mkdir -p ~/c/Users/myusername/these/folders/are/just/for/fun
+
+-p to create the file if doese not exist .
+
+---
+Q3:
+
+we can append a text to a file using command 'echo' as following: 
+$echo "hello world" >> fileName 
