@@ -127,11 +127,6 @@ nav .container .rightMenue button:hover {
 
 /* start styling the presentation img */
 
-/* .presentationImg {
-  display: flex;
-  flex-direction: column;
-} */
-
 .presentationImg .dataBox {
   max-width: 100%;
   background-color: white;
@@ -284,6 +279,10 @@ main .radhi img {
   nav .container .rightMenue .fa-bars:hover {
     color: rgba(218, 218, 218, 0.986);
   }
+
+  .focusOnSafety .safetyContent {
+    flex-direction: column;
+  }
 }
 
 /* for mobile phones */
@@ -300,6 +299,10 @@ main .radhi img {
   }
   nav .container .rightMenue .fa-bars:hover {
     color: rgba(218, 218, 218, 0.986);
+  }
+
+  .focusOnSafety .safetyContent {
+    flex-direction: column;
   }
 }
 /* End of Nav and header styling */
@@ -319,7 +322,8 @@ main .radhi img {
   text-align: left;
 }
 
-.uber-business .data h2 {
+.uber-business .data h2,
+.focusOnSafety h2 {
   font-family: "Uber Move Medium", "Helvetica Neue", Helvetica, Arial;
   font-size: 36px;
   font-weight: 500;
@@ -345,3 +349,55 @@ main .radhi img {
 }
 
 /* End of styling Uber For Business Section */
+
+/* Start styling Focus on Safety Section */
+
+.focusOnSafety h2 {
+  margin: 0 10%;
+  padding: 30px 0;
+}
+
+.focusOnSafety .safetyContent {
+  display: flex;
+  justify-content: center;
+  padding: 19px 0 25px 0;
+  margin: 0 10% 2rem 10%;
+  gap: 40px;
+}
+
+.focusOnSafety .safetyContent .safetyContentItem {
+  flex: 1 0 40%;
+  margin-bottom: 2rem;
+}
+
+.focusOnSafety .safetyContent .safetyContentItem img {
+  width: 100%;
+}
+
+.focusOnSafety .safetyContent .safetyContentItem h3 {
+  font-family: "Uber Move Medium", "Helvetica Neue", Helvetica, Arial;
+  font-size: 18px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.focusOnSafety .safetyContent .safetyContentItem p {
+  margin-bottom: 20px;
+  line-height: 24px;
+  width: 100%;
+}
+
+.focusOnSafety .safetyContent .safetyContentItem span {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+.focusOnSafety .safetyContent .safetyContentItem span:hover {
+  border-bottom: 2px solid #000000;
+}
+
+/* End styling Focus on Safety Section */
