@@ -1,0 +1,347 @@
+/* To import a custom font (Uber Move Font)  */
+
+@font-face {
+  font-family: "Uber Move Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uber Move Bold"), url("fonts/UberMoveBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Uber Move Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uber Move Bold"), url("fonts/UberMoveMedium.woff") format("woff");
+}
+/* To import a custom font (Uber Move Text Font)  */
+
+@font-face {
+  font-family: "Uber Move Text Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uber Move Text Regular"),
+    url("fonts/UberMoveTextRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Uber Move Text Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uber Move Text Medium"),
+    url("fonts/UberMoveTextMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Uber Move Text Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uber Move Text Bold"),
+    url("fonts/UberMoveTextBold.woff") format("woff");
+}
+
+/* Start styling the Navigation Bar  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Uber Move Text Regular", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem;
+  background-color: black;
+  color: white;
+}
+nav .container .leftSide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav .container .leftSide .logo {
+  font-family: "Uber Move Bold", "Helvetica Neue", Helvetica, Arial;
+  font-size: 1.5rem;
+  margin: 0 1rem 0 0;
+}
+
+nav .container .leftSide .mainMenue {
+  list-style: none;
+}
+
+nav .container .leftSide .mainMenue li,
+nav .container .rightMenue ul li {
+  display: inline-block;
+  padding: 10px 12px;
+  font-family: "Uber Move Text Bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+nav .container .leftSide .mainMenue li:hover,
+nav .container .rightMenue ul li:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+
+nav .container .rightMenue {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav .container .rightMenue ul {
+  list-style: none;
+}
+
+nav .container .rightMenue ul li i {
+  margin: 0 10px 0 0;
+}
+
+nav .container .rightMenue .fa-bars {
+  display: none;
+}
+
+nav .container .rightMenue button {
+  background-color: white;
+  padding: 0.5rem 0.9rem;
+  margin: 0 10px;
+  border-radius: 30px;
+  border-style: none;
+  transition: 0.5s ease;
+}
+
+nav .container .rightMenue button:hover {
+  background-color: rgba(218, 218, 218, 0.986);
+}
+
+/* End stylng the nav Bar */
+
+/* start styling the presentation img */
+
+/* .presentationImg {
+  display: flex;
+  flex-direction: column;
+} */
+
+.presentationImg .dataBox {
+  max-width: 100%;
+  background-color: white;
+}
+
+.presentationImg img {
+  width: 100%;
+  display: block;
+}
+
+.presentationImg .dataBox .features {
+  display: flex;
+  margin-top: 2rem;
+  padding-left: 48px;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #fefefe;
+}
+
+.presentationImg .dataBox .features .featureItem {
+  text-align: center;
+  line-height: 20px;
+  width: 60px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.presentationImg .dataBox .features .featureItem:first-child {
+  border-bottom: 3px solid black;
+}
+
+.presentationImg .dataBox .features .featureItem i {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.presentationImg .dataBox .features .featureItem p {
+  font-family: "Uber Move Text Medium", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.presentationImg .dataBox .features .featureItem span:hover {
+  color: #545454;
+}
+
+.presentationImg .dataBox .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: auto;
+  padding: 48px;
+}
+
+.presentationImg .dataBox .text h2 {
+  font-size: 56px;
+  font-family: "Uber Move Medium", "Helvetica Neue", Helvetica, Arial;
+  line-height: 64px;
+  width: 90%;
+  color: black;
+}
+
+.presentationImg .dataBox .text p {
+  color: black;
+  margin-top: 24px;
+}
+
+.presentationImg .dataBox .text button {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Uber Move Text Bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.presentationImg .dataBox .text button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+main .radhi img {
+  width: 100%;
+  height: 400px;
+}
+
+/* To Make the header and nav responsive */
+
+/* For Desktop Header */
+
+@media (min-width: 1025px) {
+  .presentationImg .dataBox {
+    width: 42%;
+    height: 65%;
+    position: absolute;
+    top: 8rem;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .presentationImg .dataBox .features {
+    justify-content: space-around;
+  }
+}
+
+/* for Tablet L  */
+@media (min-width: 721px) and (max-width: 1024px) {
+  nav .container .rightMenue ul {
+    display: none;
+  }
+
+  nav .container .rightMenue .fa-bars {
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .container .rightMenue .fa-bars:hover {
+    color: rgba(218, 218, 218, 0.986);
+  }
+}
+
+/* for Tablet M */
+@media (min-width: 623px) and (max-width: 721px) {
+  nav .container .leftSide {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav .container .rightMenue ul {
+    display: none;
+  }
+
+  nav .container .rightMenue .fa-bars {
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .container .rightMenue .fa-bars:hover {
+    color: rgba(218, 218, 218, 0.986);
+  }
+}
+
+/* for mobile phones */
+@media (max-width: 622px) {
+  nav .container .rightMenue ul,
+  nav .container .leftSide .mainMenue {
+    display: none;
+  }
+
+  nav .container .rightMenue .fa-bars {
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .container .rightMenue .fa-bars:hover {
+    color: rgba(218, 218, 218, 0.986);
+  }
+}
+/* End of Nav and header styling */
+
+/* styling Uber For Business Section */
+.uber-business {
+  background: url("upper\ business.png") no-repeat center center/cover;
+  padding: 3rem 0;
+}
+.uber-business .data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 0;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.uber-business .data h2 {
+  font-family: "Uber Move Medium", "Helvetica Neue", Helvetica, Arial;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 24px 0;
+}
+
+.uber-business .data p {
+  font-size: 1rem;
+}
+
+.uber-business button {
+  background-color: black;
+  padding: 12px 25px;
+  color: white;
+  margin: 40px 0 20px 10%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Uber Move Text Bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+/* End of styling Uber For Business Section */
