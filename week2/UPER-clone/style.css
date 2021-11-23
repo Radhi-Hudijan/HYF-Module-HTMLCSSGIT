@@ -225,87 +225,6 @@ main .radhi img {
   height: 400px;
 }
 
-/* To Make the header and nav responsive */
-
-/* For Desktop Header */
-
-@media (min-width: 1025px) {
-  .presentationImg .dataBox {
-    width: 42%;
-    height: 65%;
-    position: absolute;
-    top: 8rem;
-    left: 10%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .presentationImg .dataBox .features {
-    justify-content: space-around;
-  }
-}
-
-/* for Tablet L  */
-@media (min-width: 721px) and (max-width: 1024px) {
-  nav .container .rightMenue ul {
-    display: none;
-  }
-
-  nav .container .rightMenue .fa-bars {
-    display: inline;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  nav .container .rightMenue .fa-bars:hover {
-    color: rgba(218, 218, 218, 0.986);
-  }
-}
-
-/* for Tablet M */
-@media (min-width: 623px) and (max-width: 721px) {
-  nav .container .leftSide {
-    flex-direction: column;
-    justify-content: center;
-  }
-  nav .container .rightMenue ul {
-    display: none;
-  }
-
-  nav .container .rightMenue .fa-bars {
-    display: inline;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  nav .container .rightMenue .fa-bars:hover {
-    color: rgba(218, 218, 218, 0.986);
-  }
-
-  .focusOnSafety .safetyContent {
-    flex-direction: column;
-  }
-}
-
-/* for mobile phones */
-@media (max-width: 622px) {
-  nav .container .rightMenue ul,
-  nav .container .leftSide .mainMenue {
-    display: none;
-  }
-
-  nav .container .rightMenue .fa-bars {
-    display: inline;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  nav .container .rightMenue .fa-bars:hover {
-    color: rgba(218, 218, 218, 0.986);
-  }
-
-  .focusOnSafety .safetyContent,
-  .learnMore .learnMoreContainer {
-    flex-direction: column;
-  }
-}
 /* End of Nav and header styling */
 
 /* styling Uber For Business Section */
@@ -428,3 +347,224 @@ main .radhi img {
 }
 
 /* End of styling Learn More section  */
+
+/* Start Styling the Footer  */
+
+footer {
+  background-color: black;
+}
+
+footer .helpCenter,
+footer .footerColumns {
+  padding: 2rem 5%;
+  color: white;
+}
+
+footer .helpCenter h1 {
+  font-family: "Uber Move Bold", "Helvetica Neue", Helvetica, Arial;
+  font-size: 24px;
+  padding: 2.5rem 0;
+}
+
+footer .helpCenter a,
+footer .footerColumns .column ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 30px;
+  /* margin-bottom: 1.5rem; */
+  transition: 0.8s ease-in-out;
+}
+
+footer .helpCenter a:hover {
+  border-bottom: 3px solid white;
+}
+
+footer .footerColumns {
+  display: flex;
+  color: white;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+footer .footerColumns .column {
+  flex: 1 0 25%;
+  padding-bottom: 3rem;
+}
+
+footer .footerColumns .column ul li {
+  list-style: none;
+  padding-top: 20px;
+}
+
+footer .footerColumns .column h3 {
+  font-size: 22px;
+  line-height: 24px;
+  font-family: "Uber Move Text Medium", "Helvetica Neue", Helvetica, Arial;
+}
+
+footer .footerColumns .column ul li a:hover {
+  color: gray;
+}
+
+footer .social {
+  display: flex;
+  padding: 2rem 5%;
+}
+
+footer .social .socialItem {
+  flex: 1;
+}
+
+footer .social .socialItem i {
+  font-size: 20px;
+  color: white;
+  padding: 0 0.5rem;
+}
+
+footer .social .socialItem a {
+  padding: 1rem 1rem;
+  color: white;
+}
+
+footer .social .socialIcon a:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+footer .social .location-Lan a {
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+footer .social .appDownload {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .social .appDownload img {
+  width: 30%;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+footer .copyRight {
+  color: #afafaf;
+  text-align: left;
+  padding: 2rem 5%;
+  font-size: 12px;
+}
+
+/* End of Styling the Footer  */
+
+/* To Make the site responsive */
+
+/* For Desktop Header */
+
+@media (min-width: 1025px) {
+  .presentationImg .dataBox {
+    width: 42%;
+    height: 65%;
+    position: absolute;
+    top: 8rem;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .presentationImg .dataBox .features {
+    justify-content: space-around;
+  }
+}
+
+/* for Tablet L  */
+@media (min-width: 721px) and (max-width: 1024px) {
+  nav .container .rightMenue ul {
+    display: none;
+  }
+
+  nav .container .rightMenue .fa-bars {
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .container .rightMenue .fa-bars:hover {
+    color: rgba(218, 218, 218, 0.986);
+  }
+
+  footer .footerColumns .column:first-child,
+  footer .footerColumns .column:nth-child(2) {
+    flex-basis: 45%;
+  }
+
+  footer .social {
+    flex-direction: column;
+    flex-shrink: 1;
+  }
+
+  footer .social .socialItem {
+    margin-bottom: 4rem;
+  }
+}
+
+/* for Tablet M */
+@media (min-width: 623px) and (max-width: 721px) {
+  nav .container .leftSide {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav .container .rightMenue ul {
+    display: none;
+  }
+
+  nav .container .rightMenue .fa-bars {
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .container .rightMenue .fa-bars:hover {
+    color: rgba(218, 218, 218, 0.986);
+  }
+
+  .focusOnSafety .safetyContent,
+  footer .footerColumns,
+  footer .social {
+    flex-direction: column;
+  }
+
+  footer .social .socialItem {
+    margin-bottom: 4rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 622px) {
+  nav .container .rightMenue ul,
+  nav .container .leftSide .mainMenue {
+    display: none;
+  }
+
+  nav .container .rightMenue .fa-bars {
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .container .rightMenue .fa-bars:hover {
+    color: rgba(218, 218, 218, 0.986);
+  }
+
+  .focusOnSafety .safetyContent,
+  .learnMore .learnMoreContainer,
+  footer .footerColumns,
+  footer .social {
+    flex-direction: column;
+  }
+
+  footer .social .socialItem {
+    margin-bottom: 4rem;
+  }
+}
+
+/* End of Responsive section  */
