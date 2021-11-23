@@ -301,7 +301,8 @@ main .radhi img {
     color: rgba(218, 218, 218, 0.986);
   }
 
-  .focusOnSafety .safetyContent {
+  .focusOnSafety .safetyContent,
+  .learnMore .learnMoreContainer {
     flex-direction: column;
   }
 }
@@ -374,30 +375,56 @@ main .radhi img {
   width: 100%;
 }
 
-.focusOnSafety .safetyContent .safetyContentItem h3 {
+.focusOnSafety .safetyContent .safetyContentItem h3,
+.learnMore .learnMoreContainer h3 {
   font-family: "Uber Move Medium", "Helvetica Neue", Helvetica, Arial;
   font-size: 18px;
   margin: 20px 0;
   width: 100%;
 }
 
-.focusOnSafety .safetyContent .safetyContentItem p {
+.focusOnSafety .safetyContent .safetyContentItem p,
+.learnMore .learnMoreContainer p {
   margin-bottom: 20px;
   line-height: 24px;
+  font-size: 16px;
+  color: #333333;
   width: 100%;
 }
 
-.focusOnSafety .safetyContent .safetyContentItem span {
+.focusOnSafety .safetyContent .safetyContentItem span,
+.learnMore .learnMoreContainer span {
   margin-bottom: 20px;
   border-bottom: 2px solid #eeeeee;
   padding-bottom: 10px;
   padding-right: 10px;
+  color: #333333;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.5s linear;
 }
 
-.focusOnSafety .safetyContent .safetyContentItem span:hover {
+.focusOnSafety .safetyContent .safetyContentItem span:hover,
+.learnMore .learnMoreContainer span:hover {
   border-bottom: 2px solid #000000;
 }
 
 /* End styling Focus on Safety Section */
+
+/* styling Learn More section  */
+
+.learnMore .learnMoreContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 19px 0 25px 0;
+  margin: 0 10% 2rem 10%;
+  gap: 40px;
+}
+
+.learnMore .learnMoreContainer .learnMoreItem {
+  flex: 1 0 30%;
+  margin-bottom: 2rem;
+}
+
+/* End of styling Learn More section  */
